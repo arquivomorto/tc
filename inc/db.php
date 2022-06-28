@@ -1,5 +1,4 @@
 <?php
-require './cfg.php';
 
 use Medoo\Medoo;
 

@@ -1,3 +1,4 @@
 <?php
-
-print 'olá mundo';
+$title='twitcode';
+require 'inc/header.php';
+__('olá mundo');
