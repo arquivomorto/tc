@@ -1,3 +1,4 @@
 /.todo
 /cfg/*.php
+/locale/*/LC_MESSAGES/*.mo
 /test*.php
