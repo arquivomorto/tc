@@ -1,0 +1,45 @@
+/* classes */
+
+.avatar {
+    border-radius: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main aside";
+    grid-template-columns: 640px 160px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 800px;
+
+}
+
+.hide{
+    display:none;
+}
+
+/* tags */
+aside {
+    display: inline-block;
+    grid-area: aside;
+    padding:5px;
+    width: 160px;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+textarea {
+    width: 100%;
+}
