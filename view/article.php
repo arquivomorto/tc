@@ -35,11 +35,9 @@ require 'inc/header.php';
         ?>
         <p class="center">
             <small>
-                <a href=""><b>@hackergaucho</b></a>
+                <a href="index.php"><b>@hackergaucho</b></a>
                 &bull;
-                <a href="<?php print $href; ?>">
-                    <?php print date('r', $message['created_at']); ?>
-                </a>
+                <?php print date('r', $message['created_at']); ?>
             </small>
         </p>
         <hr>
