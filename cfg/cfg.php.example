@@ -1,0 +1,11 @@
+<?php
+return [
+    'defaultDB'=>'mysql',
+    'defaultLanguage'=>'en',
+    'errors'=>true,
+    'languages'=>'en,pt',
+    'siteName'=>'TwitCode',
+    'siteUrl'=>'http://localhost/tc',
+    'tablesDir'=>'tables',
+    'version'=>'0.1.0',
+];
