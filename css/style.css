@@ -23,6 +23,12 @@
     display: none;
 }
 
+/* ids */
+
+#q{
+    width:200px;
+}
+
 /* tags */
 aside {
     display: inline-block;
