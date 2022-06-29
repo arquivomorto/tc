@@ -39,6 +39,8 @@ main {
     grid-area: main;
 }
 
+input[type=email],
+input[type=text],
 textarea {
     width: 100%;
 }
