@@ -4,14 +4,17 @@ require 'inc/header.php';
 ?>
 <div class="container">
     <header class="top center">
-        <img src="holder.js/100x100" class="avatar">
+        <!---gráfico de mensagens--->
     </header>
     <main class="feed">
-        <?php require 'inc/formArtigo.php';?>
-        <?php require 'inc/formMensagem.php';?>
+	<section class="center">
+	        <?php require 'inc/formArtigo.php';?>
+        	<?php require 'inc/formMensagem.php';?>
+	</section>
         <?php require 'inc/feedMensagens.php';?>
     </main>
     <aside class="center">
+	<img src="holder.js/100x100" class="avatar">
         <p>
             <strong>Hacker Gaucho</strong>
         </p>
