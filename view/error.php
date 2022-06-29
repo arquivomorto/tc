@@ -11,6 +11,9 @@ require 'inc/header.php';
         {
             $msg=null;
             switch ($errorCode) {
+                case 'invalidArticle':
+                    $msg=__('Artigo inválido', false);
+                    break;                
                 case 'invalidMessage':
                     $msg=__('Mensagem inválida', false);
                     break;

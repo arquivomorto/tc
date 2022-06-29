@@ -6,7 +6,7 @@
     ?>
     <h1 class="center">
         <a href="<?php print $href; ?>">
-            <?php print $text; ?>
+            <?php print htmlentities($text); ?>
         </a>
     </h1>
     <p class="center">

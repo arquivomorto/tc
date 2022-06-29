@@ -4,13 +4,21 @@ require 'cfg.php';
 $db=require $INC.'/db.php';
 $method=$_SERVER['REQUEST_METHOD'];
 if ($method=='POST') {
-    $article=$_POST['article'];
-    $article=trim($article);
-    $articleLen=mb_strlen($article);
+    // título
     $message=$_POST['message'];
     $message=trim($message);
     $messageLen=mb_strlen($message);
-    if ($articleLen>=1 and $messageLen>=1) {
+
+    // artigo
+    $article=$_POST['article'];
+    $article=trim($article);
+    $articleLen=mb_strlen($article);
+    if (
+        $messageLen>=1 and
+        $messageLen<=128 and
+        $articleLen>=1 and
+        $articleLen<=1024
+    ) {
         $data=[
             'article'=>$article,
             'message'=>$message,
@@ -23,7 +31,7 @@ if ($method=='POST') {
         header('Location: '.$url);
     } else {
         $error=[
-          'invalidMessage'
+          'invalidArticle'
         ];
         require 'view/error.php';
     }
@@ -33,10 +41,10 @@ if ($method=='POST') {
         'id'=>$messageId
     ];
     $message=$db->get('messages', '*', $where);
-    if($message){
+    if ($message) {
         require $INC.'/markdown.php';
         require 'view/article.php';
-    }else{
+    } else {
         http_response_code(404);
         die('not found');
     }

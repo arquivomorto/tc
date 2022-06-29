@@ -4,8 +4,8 @@
     </label> /
     <label for="article"><?php __('Artigo');?></label><br>
     <label for="message"><?php __("Título");?></label>
-    <input type="text" name="message" id="message">
+    <input type="text" name="message" id="message" maxlength="128" minlength="1" required="required">
     <label for="article"><?php __('Markdown');?></label><br>    
-    <textarea name="article" id="article" rows="5"></textarea>
+    <textarea name="article" id="article" rows="5" maxlength="1024" minlength="1" required="required"></textarea>
     <button type="submit"><?php __('Enviar artigo');?></button>
 </form>
