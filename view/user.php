@@ -9,6 +9,7 @@ require 'inc/header.php';
     <main class="feed">
         <?php require 'inc/formArtigo.php';?>
         <?php require 'inc/formMensagem.php';?>
+        <?php require 'inc/feedMensagens.php';?>
     </main>
     <aside class="center">
         <p>

@@ -9,7 +9,8 @@ if ($messageLen>=1) {
     $data=[
       'message'=>$message,
       'language'=>'pt',
-      'created_at'=>time()
+      'created_at'=>time(),
+      'type'=>'message'
     ];
     $db->insert('messages', $data);
     $url=$cfg['siteUrl'];
