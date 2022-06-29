@@ -26,9 +26,7 @@ require 'inc/header.php';
     $href=$cfg['siteUrl'].'/article.php?id='.$message['id'];
     ?>
         <h1 class="center">
-            <a href="<?php print $href; ?>">
-                <?php print $text; ?>
-            </a>
+            <?php print $text; ?>
         </h1>
         <?php 
         $article=$message['article'];
