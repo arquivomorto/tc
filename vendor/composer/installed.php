@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '1c9b50dbd0788461489817d23aec24341c03e326',
+        'reference' => 'a3ee7831c4e6ff52cc7f51fc75fa8b9166e127b7',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '1c9b50dbd0788461489817d23aec24341c03e326',
+            'reference' => 'a3ee7831c4e6ff52cc7f51fc75fa8b9166e127b7',
             'dev_requirement' => false,
         ),
         'catfan/medoo' => array(
@@ -26,6 +26,15 @@
             'install_path' => __DIR__ . '/../catfan/medoo',
             'aliases' => array(),
             'reference' => '86ac2b376303f6c3c8e915be9051599b67a8a09e',
+            'dev_requirement' => false,
+        ),
+        'erusev/parsedown' => array(
+            'pretty_version' => '1.7.4',
+            'version' => '1.7.4.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../erusev/parsedown',
+            'aliases' => array(),
+            'reference' => 'cb17b6477dfff935958ba01325f2e8a2bfa6dab3',
             'dev_requirement' => false,
         ),
         'phpmyadmin/motranslator' => array(
