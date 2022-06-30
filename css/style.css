@@ -19,14 +19,24 @@
     width: 800px;
 }
 
+.container.home {
+    display: grid;
+    grid-template-areas:
+        "asideL asideR";
+    grid-template-columns: 480px 320px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 800px;
+}
+
 .hide {
     display: none;
 }
 
 /* ids */
 
-#q{
-    width:200px;
+#q {
+    width: 200px;
 }
 
 /* tags */
@@ -35,6 +45,20 @@ aside {
     grid-area: aside;
     padding: 5px;
     width: 160px;
+}
+
+aside.home.asideL {
+    display: inline-block;
+    grid-area: asideL;
+    padding: 5px;
+    width: 480px;
+}
+
+aside.home.asideR {
+    display: inline-block;
+    grid-area: asideR;
+    padding: 5px;
+    width: 320px;
 }
 
 blockquote {
@@ -46,6 +70,10 @@ blockquote {
 
 blockquote p {
     display: inline;
+}
+
+button {
+    cursor: pointer;
 }
 
 del {
@@ -66,8 +94,10 @@ main {
 }
 
 input[type=email],
+input[type=password],
 input[type=text],
 textarea {
+    margin: 5px 0 10px 0;
     width: 100%;
 }
 
