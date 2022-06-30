@@ -27,7 +27,7 @@ if ($method=='POST') {
             'type'=>'article'
         ];
         $db->insert('messages', $data);
-        $url=$cfg['siteUrl'];
+        $url=$cfg['siteUrl'].'/user.php';
         header('Location: '.$url);
     } else {
         $error=[

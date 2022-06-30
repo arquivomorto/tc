@@ -16,7 +16,7 @@ if (
       'type'=>'message'
     ];
     $db->insert('messages', $data);
-    $url=$cfg['siteUrl'];
+    $url=$cfg['siteUrl'].'/user.php';
     header('Location: '.$url);
 } else {
     $error=[
